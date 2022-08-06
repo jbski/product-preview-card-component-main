@@ -29,8 +29,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 40vh;
-    width: 550px;
+    height: 600px;
+    width: 600px;
   }
 
   .flex-card-container .product {
@@ -119,7 +119,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 600px;
   }
 
   .flex-card-container .product {
