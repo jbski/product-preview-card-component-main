@@ -29,9 +29,105 @@
     }
 
     /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Fraunces', serif; */
+     */
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: lightgray;
+    }
+
+    .flex-card-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 35vh;
+      width: 600px;
+      margin: 40px;
+      background: var(--neutral-white);
+      border-radius: 10px;
+      /* border: 1px solid darkblue; */
+    }
+
+    #chanel-image {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      height: 100%;
+      width: 50%;
+    }    
+
+    #text-label {
+      font-family: 'Fraunces', serif;
+      text-transform: uppercase;
+      color: var(--neutral-dark-grayish-blue);
+      letter-spacing: 2px;
+      padding: 30px;      
+    }
+
+    #header-text {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      line-height: 1.0;
+    }
+
+    #card-paragraph {
+      font-family: 'Montserrat', sans-serif;
+      font-size: var(--paragraph-font-size);
+      color: var(--neutral-dark-grayish-blue);
+      padding-left: 30px;
+      padding-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .flex-prices {
+      display: flex;
+      /* flex-direction: column; */
+    }
+
+    #us-price {
+      font-family: 'Fraunces', serif;
+      font-size: 26px;
+      padding-left: 30px;
+      color: var(--primary-dark);
+      padding-top: 20px;
+    }
+
+    #euro-price {
+      font-size: 14px;
+      color: var(--neutral-dark-grayish-blue);
+      padding-left: 35px;
+      text-decoration-line: line-through;
+      padding-top: 28px;
+      
+    }
+
+    .button {
+      color: var(--neutral-white);
+      background: var(--primary-dark);
+      text-align: center;
+      padding: 10px;
+      margin-left: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      
+    }
+
+    #btn-cart {
+      /* transform: scaleX(-1); */
+      margin-right: 10px;
+    }
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -39,17 +135,23 @@
 </head>
 <body>
 
-  Preview
 
-  Gabrielle Essence Eau De Parfum
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+  <div class="flex-card-container">
+    <img src="./images/image-product-desktop.jpg" alt="" id="chanel-image">
+    <div class="flex-card-text">
+      <div id="text-label">perfume</div>
+      <div id="header-text"><h2>Gabrielle <br> Essence Eau <br> De Parfum</h2></div>
+      <div id="card-paragraph"><p>A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge, Perfumer-Creator <br> for the house of CHANEL.</p></div>
+      <div class="flex-prices">
+        <div id="us-price">$149.99</div>
+        <div id="euro-price">$169.99</div>
+      </div>
+      <div class="button"> <span><img src="./images/icon-cart.svg" id="btn-cart" alt=""></span> Add to Cart</div>
+    </div>  
+  </div>
 
-  $149.99
-  $169.99
-
-  Add to Cart
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
